@@ -47,3 +47,7 @@ node_modules/
 # Build outputs
 dist/
 build/
+
+# Scripts
+
+git_github_setup.sh

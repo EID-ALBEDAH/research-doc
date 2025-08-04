@@ -72,7 +72,7 @@ This is an academic research project. For questions or collaboration opportuniti
 ## Author
 
 **Eid ALBADDAH**  
-CVE Lifecycle Analysis Researcher
+CVE Lifecycle Analysis Researcher.
 
 ## License
 
