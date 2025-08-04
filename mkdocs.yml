@@ -155,6 +155,12 @@ nav:
 
   - Research Ideas & Exploration:
     - research/index.md
+    - Vendor CWE Analysis:
+      - research/vendor-cwe-analysis/index.md
+      - Analysis Notebook: research/vendor-cwe-analysis/vendor-cwe-analysis.ipynb
+      - Results & Findings: research/vendor-cwe-analysis/results.md
+      - Reproduction Guide: research/vendor-cwe-analysis/reproduction.md
+      - References: research/vendor-cwe-analysis/references.md
     - Exploit Prediction:
       - research/exploit-prediction/index.md
       - Literature Review: research/exploit-prediction/literature.md

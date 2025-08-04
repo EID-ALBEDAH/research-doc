@@ -50,4 +50,6 @@ build/
 
 # Scripts
 
+
+documentation.sh
 git_github_setup.sh

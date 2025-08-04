@@ -13,18 +13,81 @@ This chapter presents enhanced vulnerability lifecycle analysis building upon th
   * **GitHub Advisories**: github_advisories is included where patched = 1 or patch_available = 1.  
   * **MoreFixes**: morefixes_fixes is joined with morefixes_commits to get the author_date as the patch date.  
 
-<div class="superset-embed">
+<style>
+    /* Styling for the lazy-load button */
+    .superset-embed-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%; /* Or whatever height you need */
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f9f9f9;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .superset-embed-wrapper iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        display: none; /* Initially hide the iframe */
+    }
+
+    .load-dashboard-button {
+        padding: 12px 24px;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .load-dashboard-button:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+    }
+</style>
+
+<div class="superset-embed-wrapper" id="dashboard-wrapper">
+    <button class="load-dashboard-button" onclick="loadDashboard()">Load CVE Life-cycle Analysis Dashboard</button>
     <iframe
         width="100%"
-        height="100%"
+        height="1080px"
         seamless
         frameBorder="0"
         scrolling="yes"
-        src="https://analytic.ifthreat.com/superset/dashboard/chapter-5/?standalone=1&height=1080&show_filters=1"
+        data-src="https://analytic.ifthreat.com/superset/dashboard/chapter-5/?standalone=1&height=1080&show_filters=1"
         loading="lazy">
     </iframe>
-    <p class="chart-caption">📊 Chapter 4: Complete CVE Analysis Dashboard - Interactive Multi-Vendor Analysis</p>
 </div>
+<p class="chart-caption" style="margin-top: 10px;">📊 Chapter 5: Complete CVE Life Cycle Analysis Dashboard - Interactive Multi-Vendor Analysis</p>
+<script>
+    function loadDashboard() {
+        const wrapper = document.getElementById('dashboard-wrapper');
+        const iframe = wrapper.querySelector('iframe');
+        const button = wrapper.querySelector('.load-dashboard-button');
+        
+        // Set the iframe's src from the data-src attribute
+        iframe.src = iframe.dataset.src;
+        
+        // Show the iframe and hide the button
+        iframe.style.display = 'block';
+        button.style.display = 'none';
+
+        // Optional: Hide the button's parent wrapper if desired
+        wrapper.classList.remove('superset-embed-wrapper');
+        wrapper.style.border = 'none';
+        wrapper.style.backgroundColor = 'transparent';
+    }
+</script>
+
 ## **Lifecycle Analysis**
 
 
