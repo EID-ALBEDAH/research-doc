@@ -1,0 +1,208 @@
+site_name: "CVE Lifecycle Analysis Research Hub"
+site_description: "Analyzing CVE Lifecycle and Relationships with Exploits, Patches, CWEs, and CPEs"
+site_author: "Eid ALBADDAH"
+site_url: "https://doc.ifthreat.com"
+
+theme:
+  name: material
+  custom_404_page: true
+  custom_dir: overrides
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep amber
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep amber
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+    - header.autohide
+    - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate
+
+  icon:
+    logo: material/security
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+plugins:
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - minify:
+      minify_html: true
+  - macros
+  - mkdocs-jupyter:
+      execute: false
+      kernel_name: python3
+      include_source: true
+      ignore_h1_titles: false
+      show_input: true
+      show_output: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js
+  - javascripts/print.js
+
+extra_css:
+  - stylesheets/extra.css
+  - https://cdn.tailwindcss.com
+
+extra:
+  generator: false
+
+nav:
+  - Home:
+    - index.md
+    - About: about.md
+    - Research Overview: research-overview.md
+
+  - Data & Schema:
+    - data/index.md
+    - Schema Overview: data/schema-overview.md
+    - Data Dictionary: data/data-dictionary.md
+    - Sources & References: data/sources.md
+    - ETL Pipeline: data/etl-pipeline.md
+    - Data Quality: data/data-quality.md
+
+  - Analysis & Visualizations:
+    - analysis/index.md
+    - Transfer Report:
+      - analysis/transfer-report/index.md
+      - Transfer Report (PDF): analysis/transfer-report/transfer-report-pdf.md
+    - Current Research:
+      - analysis/current/index.md
+      - Chapter 4 - CVE Analysis: analysis/current/chapter-4-enhanced.md
+      - Chapter 5 - Lifecycle Analysis: analysis/current/chapter-5-enhanced.md
+      - Multi-Vendor Analysis: analysis/current/multi-vendor.md
+      - Temporal Patterns: analysis/current/temporal-patterns.md
+      - Statistical Analysis: analysis/current/statistical-analysis.md
+    - Superset Analytics: analysis/superset-playground.md
+
+  - Research Ideas & Exploration:
+    - research/index.md
+    - Exploit Prediction:
+      - research/exploit-prediction/index.md
+      - Literature Review: research/exploit-prediction/literature.md
+      - Feature Engineering: research/exploit-prediction/template.ipynb
+      - Model Development: research/exploit-prediction/models.ipynb
+      - Results & Evaluation: research/exploit-prediction/results.md
+    - Patch Prioritization:
+      - research/patch-prioritization/index.md
+      - Risk Assessment: research/patch-prioritization/risk-assessment.md
+      - Priority Models: research/patch-prioritization/models.ipynb
+      - Case Studies: research/patch-prioritization/case-studies.md
+    - Lifecycle Modeling:
+      - research/lifecycle-modeling/index.md
+      - Heavy-Tailed Analysis: research/lifecycle-modeling/heavy-tailed.ipynb
+      - Survival Analysis: research/lifecycle-modeling/survival-analysis.ipynb
+      - Time Series Analysis: research/lifecycle-modeling/time-series.ipynb
+    - Vendor Comparison:
+      - research/vendor-comparison/index.md
+      - Commercial vs Open Source: research/vendor-comparison/commercial-vs-oss.md
+      - Response Times: research/vendor-comparison/response-times.ipynb
+      - Ecosystem Analysis: research/vendor-comparison/ecosystem.md
+
+  - Conference Papers:
+    - publications/index.md
+    - In Progress:
+      - publications/in-progress/index.md
+      - Paper 1 - Lifecycle Patterns: publications/in-progress/lifecycle-patterns.md
+      - Paper 2 - Vendor Analysis: publications/in-progress/vendor-analysis.md
+    - Submitted: publications/submitted/index.md
+    - Published: publications/published/index.md
+
+  - Methodology:
+    - methodology/index.md
+    - Research Design: methodology/research-design.md
+    - Data Collection: methodology/data-collection.md
+    - Analysis Framework: methodology/analysis-framework.md
+    - Statistical Methods: methodology/statistical-methods.md
+    - Validation Approaches: methodology/validation.md
+
+  - Future Work:
+    - future/index.md
+    - Thesis Proposal: future/thesis-proposal.md
+    - Research Roadmap: future/roadmap.md
+    - Collaboration Opportunities: future/collaborations.md
+
+  - Resources:
+    - resources/index.md
+    - References: resources/references.md
+    - Tools & Software: resources/tools.md
+    - Datasets: resources/datasets.md
+    - Code Repository: resources/code.md
