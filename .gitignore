@@ -53,3 +53,50 @@ build/
 
 documentation.sh
 git_github_setup.sh
+
+# Main data directories
+data/
+parquet_data/
+raw_data/
+processed_data/
+datasets/
+
+# Database files
+*.db
+*.duckdb
+*.sqlite
+*.sqlite3
+
+# Data formats
+*.parquet
+*.csv
+*.tsv
+*.json
+*.jsonl
+*.xml
+*.xlsx
+*.xls
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+
+# Compressed data
+*.zip
+*.tar.gz
+*.tar.bz2
+*.7z
+*.rar
+
+# Large files (GitHub has 100MB limit)
+*.bin
+*.dat
+*.dump
+
+# Research outputs (optional)
+figures/
+results/
+output/
+exports/
+
+cve_project/
