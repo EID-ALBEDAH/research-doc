@@ -59,6 +59,7 @@ theme:
 
 markdown_extensions:
   - abbr
+  - tables
   - admonition
   - attr_list
   - def_list
@@ -148,7 +149,8 @@ nav:
       - analysis/current/index.md
       - Chapter 4 - CVE Analysis: analysis/current/chapter-4-enhanced.md
       - Chapter 5 - Lifecycle Analysis: analysis/current/chapter-5-enhanced.md
-      - CVE-CPE Difference Analysis: analysis/current/cpe-cve-old-vs-new.md
+      - CVE-CPE Differences Analysis: analysis/current/cpe-cve-old-vs-new.md
+      - CVE-CWE Differences Analysis: analysis/current/cwe-cve-old-vs-new.md
       - Multi-Vendor Analysis: analysis/current/multi-vendor.md
       - Temporal Patterns: analysis/current/temporal-patterns.md
       - Statistical Analysis: analysis/current/statistical-analysis.md
