@@ -30,9 +30,9 @@ In today's interconnected world, the security of information systems is of param
 
     Examining trends and patterns in the race between exploits and patches across different vendors
 
-- :material-microsoft: **Microsoft Focus**
+- :material-microsoft: :material-linux: **Multi-vendor Focus**
 
-    Deep analysis of Microsoft vulnerabilities with comprehensive patch and exploit correlation
+    Deep analysis of Microsoft, RedHat and Cisco vulnerabilities in addition to open-source with comprehensive patch and exploit correlation
 
 - :material-brain: **Predictive Modeling**
 
@@ -46,7 +46,7 @@ In today's interconnected world, the security of information systems is of param
     
     - **Data Integration**: Successfully integrated MoreFixes and GitHub Advisory databases
     - **Enhanced Analysis**: Multi-vendor comparison framework completed
-    - **Conference Preparation**: Working on papers for submission to cybersecurity conferences
+    - **Conference Preparation**: Working on papers for submission to cybersecurity conferences (EDCC)
     - **Thesis Development**: Exploring advanced lifecycle modeling approaches
 
 ## Research Impact
@@ -84,8 +84,8 @@ In today's interconnected world, the security of information systems is of param
 | CVEs | 280K+ | NVD, MITRE | 2025-05-13 |
 | Exploits | 50K+ | ExploitDB | 2025-05-13 |
 | Patches | 75K+ | MSRC, RedHat, Cisco | 2025-05-13 |
-| GitHub Advisories | 25K+ | GitHub Security | 2025-05-13 |
-| MoreFixes | 150K+ | Academic Research | 2025-05-13 |
+| GitHub Advisories | 280K+ | GitHub Security | 2025-05-13 |
+| MoreFixes | 150K+ | Academic Research | 2024-09-24 |
 
 ---
 
