@@ -12,7 +12,7 @@ Explore 280K+ CVEs, 50K+ exploits, and 75K+ patches through dynamic visualizatio
 
 **Platform**: [analytic.ifthreat.com](https://analytic.ifthreat.com)
 
-[**Request Access**](mailto:eid.albaddah@university.edu?subject=Superset%20Access%20Request&body=Hello%2C%0A%0AI%20would%20like%20to%20request%20access%20to%20the%20Apache%20Superset%20analytics%20playground.%0A%0AName%3A%20%0AInstitution%2FOrganization%3A%20%0AReason%20for%20access%3A%20%0A%0AThank%20you%21){ .md-button .md-button--primary }
+[**Request Access**](mailto:Eid.Albedah@citystgeorges.ac.uk?subject=Superset%20Access%20Request&body=Hello%2C%0A%0AI%20would%20like%20to%20request%20access%20to%20the%20Apache%20Superset%20analytics%20playground.%0A%0AName%3A%20%0AInstitution%2FOrganization%3A%20%0AReason%20for%20access%3A%20%0A%0AThank%20you%21){ .md-button .md-button--primary }
 
 </div>
 
@@ -46,7 +46,7 @@ Explore 280K+ CVEs, 50K+ exploits, and 75K+ patches through dynamic visualizatio
     
     **To gain access to the analytics platform:**
     
-    1. **Email Request**: Send to eid.albaddah@university.edu
+    1. **Email Request**: Send to Eid.Albedah@citystgeorges.ac.uk
     2. **Include Information**:
         - Full name and institution
         - Research purpose or analysis needs
@@ -205,7 +205,7 @@ graph TB
 - **Best Practices**: Recommended approaches for different analysis types
 
 ### Support Channels
-- **Email Support**: eid.albaddah@university.edu for technical issues
+- **Email Support**: Eid.Albedah@citystgeorges.ac.uk for technical issues
 - **Documentation**: Built-in help system and tutorials
 - **Community**: User feedback and feature requests welcome
 
@@ -233,7 +233,7 @@ This platform has supported analysis for:
 ---
 
 **Platform Access**: [analytic.ifthreat.com](https://analytic.ifthreat.com)  
-**Support Contact**: eid.albaddah@university.edu  
+**Support Contact**: Eid.Albedah@citystgeorges.ac.uk  
 **Documentation**: Available in-platform after login
 
 *This interactive analytics platform represents a unique resource for vulnerability research, providing unprecedented access to comprehensive, real-time vulnerability intelligence for academic research, industry analysis, and policy development.*

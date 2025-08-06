@@ -86,7 +86,7 @@ This section presents comprehensive analysis of vulnerability lifecycles, exploi
 
 Access real-time vulnerability analytics dashboards powered by Apache Superset.
 
-[**Access Superset Playground**](mailto:eid.albaddah@university.edu?subject=Superset%20Access%20Request&body=Hello%2C%0A%0AI%20would%20like%20to%20request%20access%20to%20the%20Apache%20Superset%20analytics%20playground%20at%20analytic.ifthreat.com.%0A%0AName%3A%20%0AInstitution%2FOrganization%3A%20%0AReason%20for%20access%3A%20%0A%0AThank%20you%21){ .md-button .md-button--primary }
+[**Access Superset Playground**](mailto:Eid.Albedah@citystgeorges.ac.uk?subject=Superset%20Access%20Request&body=Hello%2C%0A%0AI%20would%20like%20to%20request%20access%20to%20the%20Apache%20Superset%20analytics%20playground%20at%20analytic.ifthreat.com.%0A%0AName%3A%20%0AInstitution%2FOrganization%3A%20%0AReason%20for%20access%3A%20%0A%0AThank%20you%21){ .md-button .md-button--primary }
 
 **Platform**: [analytic.ifthreat.com](https://analytic.ifthreat.com)  
 **Access**: Request required - Contact for credentials  
@@ -98,7 +98,7 @@ Access real-time vulnerability analytics dashboards powered by Apache Superset.
     
     **To request access to the interactive analytics platform:**
     
-    1. **Email**: eid.albaddah@university.edu
+    1. **Email**: Eid.Albedah@citystgeorges.ac.uk
     2. **Subject**: "Superset Access Request"
     3. **Include**: Your name, institution, and reason for access
     4. **Response Time**: 24-48 hours for credential provisioning

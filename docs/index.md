@@ -4,7 +4,7 @@
 
 **Analyzing CVE Lifecycle and Relationships with Exploits, Patches, CWEs, and CPEs: A Focus on Major Commercial Vendors and Open-source Vulnerabilities**
 
-*PhD Research by Eid ALBADDAH*  
+*Eid ALBADDAH*  
 *City St George's, University of London*  
 *Department of Computer Science*
 

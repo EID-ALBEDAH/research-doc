@@ -2,22 +2,32 @@
 /* Custom styling for CVE Research Documentation */
 
 :root {
-  --md-primary-fg-color: #cb2929;
-  --md-primary-fg-color--light: #292e1d;
-  --md-primary-fg-color--dark: #544d20;
-  --md-accent-fg-color: #1d1d04;
+  --md-primary-fg-color: #3f51b5; /* A modern, calming blue */
+  --md-primary-fg-color--light: #7986cb; /* Lighter shade of the primary blue */
+  --md-primary-fg-color--dark: #303f9f; /* Darker shade of the primary blue */
+  --md-accent-fg-color: #00bcd4; /* A vibrant, modern cyan accent */
   
-  /* Academic colors */
+  /* Academic colors - kept as is, but consider if they clash with new primary */
   --academic-blue: #1976d2;
   --academic-green: #388e3c;
   --academic-orange: #f57c00;
   --academic-red: #d32f2f;
   
-  /* Research status colors */
+  /* Research status colors - kept as is */
   --status-planning: #ff9800;
   --status-progress: #2196f3;
   --status-completed: #4caf50;
   --status-published: #9c27b0;
+
+  /* Additional general colors for tables, derived from your palette */
+  --table-header-bg: #f8f8f8; /* Light background for headers */
+  --table-header-text: #333; /* Darker text for headers */
+  --table-border-color-strong: #e0e0e0; /* Stronger border for header */
+  --table-border-color-light: #eee; /* Light border for cells */
+  --table-cell-text: #555; /* Slightly lighter text for content */
+  --table-row-odd-bg: #ffffff; /* White background for odd rows */
+  --table-row-even-bg: #fcfcfc; /* Very light grey for even rows */
+  --table-row-hover-bg: #f0f0f0; /* Slightly darker background on hover */
 }
 
 /* Hero section styling */
@@ -326,22 +336,105 @@
     }
 }
 
-/* Add a print button */
+/* Print button styling */
 .print-button {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background: #1976d2;
+    position: fixed; /* Keep it in a fixed position on the screen */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    background: var(--md-accent-fg-color); /* Use the accent color for the button */
     color: white;
     padding: 10px 15px;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px; /* Slightly more rounded corners for a modern look */
     cursor: pointer;
-    z-index: 1000;
+    z-index: 1000; /* Ensure it stays on top of other elements */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for hover effects */
+    font-weight: 600; /* Make text a bit bolder */
+    font-family: 'Inter', sans-serif; /* Consistent font */
+    text-transform: uppercase; /* Uppercase text for a modern touch */
+    letter-spacing: 0.5px; /* Slightly increased letter spacing */
+}
+
+.print-button:hover {
+    background: var(--md-primary-fg-color); /* Change background on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.print-button:active {
+    transform: translateY(0); /* Reset on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Smaller shadow on click */
 }
 
 @media print {
     .print-button {
-        display: none;
+        display: none; /* Hide the button when printing */
     }
+}
+
+/* Base table styling */
+table {
+    width: 100%; /* Ensure table takes full width of its container */
+    border-collapse: collapse; /* Collapse borders for a cleaner look */
+    margin: 1.5rem 0; /* Add vertical margin for separation */
+    font-family: 'Inter', sans-serif; /* Use Inter font for consistency */
+    font-size: 0.70rem; /* Slightly smaller font size for table content */
+    line-height: 1; /* Improve readability */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners for the entire table */
+    overflow: hidden; /* Ensures rounded corners clip content */
+}
+
+/* Responsive container for tables */
+.md-typeset table {
+    display: block; /* Make table a block element for overflow */
+    overflow-x: auto; /* Enable horizontal scrolling on small screens */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+}
+
+/* Table header styling */
+th {
+    background-color: #f8f8f8; /* Light background for headers */
+    color: #333; /* Darker text for headers */
+    font-weight: 600; /* Semi-bold headers */
+    /* Adjusted padding to make headers more compact */
+    padding: 0.8rem 1rem;
+    text-align: left; /* Align header text to the left */
+    border-bottom: 2px solid #e0e0e0; /* Stronger bottom border for header row */
+    white-space: nowrap; /* Prevent header text from wrapping */
+}
+
+/* Table cell styling */
+td {
+    /* Adjusted padding to make cells more compact */
+    padding: 0.7rem 1rem;
+    border-bottom: 1px solid #eee; /* Light bottom border for cells */
+    color: #555; /* Slightly lighter text for content */
+    vertical-align: top; /* Align content to the top */
+}
+
+/* Alternating row colors (zebra stripping) for better readability */
+tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* White background for odd rows */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fcfcfc; /* Very light grey for even rows */
+}
+
+/* Hover effect for table rows */
+tbody tr:hover {
+    background-color: #f0f0f0; /* Slightly darker background on hover */
+    transition: background-color 0.2s ease-in-out; /* Smooth transition */
+}
+
+/* Remove last row's bottom border for a cleaner finish */
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Styling for tables within code blocks (if applicable, though less common) */
+.highlight table {
+    box-shadow: none; /* Remove shadow for tables in code blocks */
+    border-radius: 0; /* Remove rounded corners */
 }

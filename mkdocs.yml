@@ -138,7 +138,6 @@ nav:
     - Data Dictionary: data/data-dictionary.md
     - Sources & References: data/sources.md
     - ETL Pipeline: data/etl-pipeline.md
-    - Data Quality: data/data-quality.md
 
   - Analysis & Visualizations:
     - analysis/index.md
