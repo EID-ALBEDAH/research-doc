@@ -1,7 +1,6 @@
 **This is where the publication and interesting research ideas**
 
-!!! Note
+!!! info "Note"
 
-Please navigate to the left menu
+    Please navigate to the left menu
 
-!!!

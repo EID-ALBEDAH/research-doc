@@ -151,9 +151,9 @@ nav:
       - CVE-CPE Differences Analysis: analysis/current/cpe-cve-old-vs-new.md
       - CVE-CWE Differences Analysis: analysis/current/cwe-cve-old-vs-new.md
       - Exploit Discrepancies Analysis: analysis/current/exploit-discrepancies-comprehensive.md
-      - Multi-Vendor Analysis: analysis/current/multi-vendor.md
-      - Temporal Patterns: analysis/current/temporal-patterns.md
-      - Statistical Analysis: analysis/current/statistical-analysis.md
+      #- Multi-Vendor Analysis: analysis/current/multi-vendor.md
+      #- Temporal Patterns: analysis/current/temporal-patterns.md
+      #- Statistical Analysis: analysis/current/statistical-analysis.md
     - Superset Analytics: analysis/superset-playground.md
 
   - Research Ideas & Exploration:
@@ -164,54 +164,54 @@ nav:
       - Results & Findings: research/vendor-cwe-analysis/results.md
       - Reproduction Guide: research/vendor-cwe-analysis/reproduction.md
       - References: research/vendor-cwe-analysis/references.md
-    - Exploit Prediction:
-      - research/exploit-prediction/index.md
-      - Literature Review: research/exploit-prediction/literature.md
-      - Feature Engineering: research/exploit-prediction/template.ipynb
-      - Model Development: research/exploit-prediction/models.ipynb
-      - Results & Evaluation: research/exploit-prediction/results.md
-    - Patch Prioritization:
-      - research/patch-prioritization/index.md
-      - Risk Assessment: research/patch-prioritization/risk-assessment.md
-      - Priority Models: research/patch-prioritization/models.ipynb
-      - Case Studies: research/patch-prioritization/case-studies.md
-    - Lifecycle Modeling:
-      - research/lifecycle-modeling/index.md
-      - Heavy-Tailed Analysis: research/lifecycle-modeling/heavy-tailed.ipynb
-      - Survival Analysis: research/lifecycle-modeling/survival-analysis.ipynb
-      - Time Series Analysis: research/lifecycle-modeling/time-series.ipynb
-    - Vendor Comparison:
-      - research/vendor-comparison/index.md
-      - Commercial vs Open Source: research/vendor-comparison/commercial-vs-oss.md
-      - Response Times: research/vendor-comparison/response-times.ipynb
-      - Ecosystem Analysis: research/vendor-comparison/ecosystem.md
+    #- Exploit Prediction:
+     # - research/exploit-prediction/index.md
+     # - Literature Review: research/exploit-prediction/literature.md
+     # - Feature Engineering: research/exploit-prediction/template.ipynb
+     # - Model Development: research/exploit-prediction/models.ipynb
+     # - Results & Evaluation: research/exploit-prediction/results.md
+    #- Patch Prioritization:
+     # - research/patch-prioritization/index.md
+     # - Risk Assessment: research/patch-prioritization/risk-assessment.md
+     # - Priority Models: research/patch-prioritization/models.ipynb
+     # - Case Studies: research/patch-prioritization/case-studies.md
+    #- Lifecycle Modeling:
+     # - research/lifecycle-modeling/index.md
+     # - Heavy-Tailed Analysis: research/lifecycle-modeling/heavy-tailed.ipynb
+     # - Survival Analysis: research/lifecycle-modeling/survival-analysis.ipynb
+     # - Time Series Analysis: research/lifecycle-modeling/time-series.ipynb
+    #- Vendor Comparison:
+     # - research/vendor-comparison/index.md
+     # - Commercial vs Open Source: research/vendor-comparison/commercial-vs-oss.md
+     # - Response Times: research/vendor-comparison/response-times.ipynb
+     # - Ecosystem Analysis: research/vendor-comparison/ecosystem.md
 
   - Conference Papers:
     - publications/index.md
-    - In Progress:
-      - publications/in-progress/index.md
-      - Paper 1 - Lifecycle Patterns: publications/in-progress/lifecycle-patterns.md
-      - Paper 2 - Vendor Analysis: publications/in-progress/vendor-analysis.md
-    - Submitted: publications/submitted/index.md
-    - Published: publications/published/index.md
+    #- In Progress:
+     # - publications/in-progress/index.md
+     # - Paper 1 - Lifecycle Patterns: publications/in-progress/lifecycle-patterns.md
+     # - Paper 2 - Vendor Analysis: publications/in-progress/vendor-analysis.md
+    #- Submitted: publications/submitted/index.md
+    #- Published: publications/published/index.md
 
   - Methodology:
     - methodology/index.md
-    - Research Design: methodology/research-design.md
-    - Data Collection: methodology/data-collection.md
-    - Analysis Framework: methodology/analysis-framework.md
-    - Statistical Methods: methodology/statistical-methods.md
-    - Validation Approaches: methodology/validation.md
+   # - Research Design: methodology/research-design.md
+   # - Data Collection: methodology/data-collection.md
+   # - Analysis Framework: methodology/analysis-framework.md
+   # - Statistical Methods: methodology/statistical-methods.md
+   # - Validation Approaches: methodology/validation.md
 
   - Future Work:
     - future/index.md
-    - Thesis Proposal: future/thesis-proposal.md
-    - Research Roadmap: future/roadmap.md
-    - Collaboration Opportunities: future/collaborations.md
+   # - Thesis Proposal: future/thesis-proposal.md
+   # - Research Roadmap: future/roadmap.md
+   # - Collaboration Opportunities: future/collaborations.md
 
   - Resources:
     - resources/index.md
-    - References: resources/references.md
-    - Tools & Software: resources/tools.md
-    - Datasets: resources/datasets.md
-    - Code Repository: resources/code.md
+   # - References: resources/references.md
+   # - Tools & Software: resources/tools.md
+   # - Datasets: resources/datasets.md
+   # - Code Repository: resources/code.md
