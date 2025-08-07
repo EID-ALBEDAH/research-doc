@@ -1,0 +1,440 @@
+/* docs/stylesheets/extra.css */
+/* Custom styling for CVE Research Documentation */
+
+:root {
+  --md-primary-fg-color: #3f51b5; /* A modern, calming blue */
+  --md-primary-fg-color--light: #7986cb; /* Lighter shade of the primary blue */
+  --md-primary-fg-color--dark: #303f9f; /* Darker shade of the primary blue */
+  --md-accent-fg-color: #00bcd4; /* A vibrant, modern cyan accent */
+  
+  /* Academic colors - kept as is, but consider if they clash with new primary */
+  --academic-blue: #1976d2;
+  --academic-green: #388e3c;
+  --academic-orange: #f57c00;
+  --academic-red: #d32f2f;
+  
+  /* Research status colors - kept as is */
+  --status-planning: #ff9800;
+  --status-progress: #2196f3;
+  --status-completed: #4caf50;
+  --status-published: #9c27b0;
+
+  /* Additional general colors for tables, derived from your palette */
+  --table-header-bg: #f8f8f8; /* Light background for headers */
+  --table-header-text: #333; /* Darker text for headers */
+  --table-border-color-strong: #e0e0e0; /* Stronger border for header */
+  --table-border-color-light: #eee; /* Light border for cells */
+  --table-cell-text: #555; /* Slightly lighter text for content */
+  --table-row-odd-bg: #ffffff; /* White background for odd rows */
+  --table-row-even-bg: #fcfcfc; /* Very light grey for even rows */
+  --table-row-hover-bg: #f0f0f0; /* Slightly darker background on hover */
+}
+
+/* Hero section styling */
+.hero-section {
+  background: linear-gradient(135deg, var(--md-primary-fg-color) 0%, var(--md-primary-fg-color--light) 100%);
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.hero-section h1 {
+  color: white !important;
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+/* Grid cards enhancement */
+.grid.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.grid.cards > * {
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.grid.cards > *:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-color: var(--md-primary-fg-color);
+}
+
+/* Research pipeline visualization */
+.research-pipeline {
+  background: var(--md-code-bg-color);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+/* Status indicators */
+.status-indicator {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: white;
+}
+
+.status-planning { background-color: var(--status-planning); }
+.status-progress { background-color: var(--status-progress); }
+.status-completed { background-color: var(--status-completed); }
+.status-published { background-color: var(--status-published); }
+
+/* Academic paper styling */
+.paper-status {
+  border-left: 4px solid var(--md-primary-fg-color);
+  padding: 1rem 1.5rem;
+  background: var(--md-code-bg-color);
+  margin: 1rem 0;
+}
+
+.paper-status h4 {
+  margin-top: 0;
+  color: var(--md-primary-fg-color);
+}
+
+/* Research metrics */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.metric-card {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+}
+
+.metric-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--md-primary-fg-color);
+  display: block;
+}
+
+.metric-label {
+  font-size: 0.875rem;
+  color: var(--md-default-fg-color--light);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Superset embed styling */
+.superset-embed {
+  margin: 2rem 0;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.superset-embed iframe {
+  border: none;
+  width: 100%;
+  height: 1080px;
+}
+
+/* Notebook embedding */
+.analysis-notebook {
+  background: var(--md-code-bg-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 2rem 0;
+  border-left: 4px solid var(--md-accent-fg-color);
+}
+
+/* Timeline styling */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--md-primary-fg-color);
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -1.5rem;
+  top: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  background: var(--md-primary-fg-color);
+  border-radius: 50%;
+}
+
+/* Data quality indicators */
+.data-quality {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.quality-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.quality-high { background-color: var(--academic-green); }
+.quality-medium { background-color: var(--academic-orange); }
+.quality-low { background-color: var(--academic-red); }
+
+/* Progress bars */
+.progress-bar {
+  background: var(--md-default-fg-color--lightest);
+  border-radius: 1rem;
+  height: 0.5rem;
+  overflow: hidden;
+  margin: 0.5rem 0;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--md-primary-fg-color), var(--md-accent-fg-color));
+  transition: width 0.3s ease;
+}
+
+/* Academic citation styling */
+.citation {
+  font-style: italic;
+  padding: 1rem;
+  border-left: 3px solid var(--md-accent-fg-color);
+  background: var(--md-code-bg-color);
+  margin: 1rem 0;
+}
+
+/* Research methodology boxes */
+.methodology-box {
+  border: 2px solid var(--md-primary-fg-color);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  background: var(--md-default-bg-color);
+}
+
+.methodology-box h3 {
+  margin-top: 0;
+  color: var(--md-primary-fg-color);
+}
+
+/* Interactive elements */
+.interactive-demo {
+  background: var(--md-code-bg-color);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.demo-button {
+  background: var(--md-primary-fg-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.demo-button:hover {
+  background: var(--md-primary-fg-color--dark);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 2rem 1rem;
+  }
+  
+  .grid.cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Print styles for PDF export */
+@media print {
+  .hero-section {
+    background: white !important;
+    color: black !important;
+    border: 2px solid black;
+  }
+  
+  .superset-embed {
+    display: none;
+  }
+  
+  .interactive-demo {
+    display: none;
+  }
+}
+
+/* Dark mode adjustments */
+[data-md-color-scheme="slate"] {
+  .metric-card {
+    background: var(--md-default-bg-color);
+    border-color: var(--md-default-fg-color--lightest);
+  }
+  
+  .grid.cards > * {
+    background: var(--md-default-bg-color);
+    border-color: var(--md-default-fg-color--lightest);
+  }
+}
+
+
+@media print {
+    .md-header, .md-tabs, .md-sidebar, .md-footer {
+        display: none !important;
+    }
+    
+    .md-content {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .md-content__inner {
+        margin: 0 !important;
+        padding: 20px !important;
+    }
+}
+
+/* Print button styling */
+.print-button {
+    position: fixed; /* Keep it in a fixed position on the screen */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    background: var(--md-accent-fg-color); /* Use the accent color for the button */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px; /* Slightly more rounded corners for a modern look */
+    cursor: pointer;
+    z-index: 1000; /* Ensure it stays on top of other elements */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for hover effects */
+    font-weight: 600; /* Make text a bit bolder */
+    font-family: 'Inter', sans-serif; /* Consistent font */
+    text-transform: uppercase; /* Uppercase text for a modern touch */
+    letter-spacing: 0.5px; /* Slightly increased letter spacing */
+}
+
+.print-button:hover {
+    background: var(--md-primary-fg-color); /* Change background on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.print-button:active {
+    transform: translateY(0); /* Reset on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Smaller shadow on click */
+}
+
+@media print {
+    .print-button {
+        display: none; /* Hide the button when printing */
+    }
+}
+
+/* Base table styling */
+table {
+    width: 100%; /* Ensure table takes full width of its container */
+    border-collapse: collapse; /* Collapse borders for a cleaner look */
+    margin: 1.5rem 0; /* Add vertical margin for separation */
+    font-family: 'Inter', sans-serif; /* Use Inter font for consistency */
+    font-size: 0.70rem; /* Slightly smaller font size for table content */
+    line-height: 1; /* Improve readability */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners for the entire table */
+    overflow: hidden; /* Ensures rounded corners clip content */
+}
+
+/* Responsive container for tables */
+.md-typeset table {
+    display: block; /* Make table a block element for overflow */
+    overflow-x: auto; /* Enable horizontal scrolling on small screens */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+}
+
+/* Table header styling */
+th {
+    background-color: #f8f8f8; /* Light background for headers */
+    color: #333; /* Darker text for headers */
+    font-weight: 600; /* Semi-bold headers */
+    /* Adjusted padding to make headers more compact */
+    padding: 0.8rem 1rem;
+    text-align: left; /* Align header text to the left */
+    border-bottom: 2px solid #e0e0e0; /* Stronger bottom border for header row */
+    white-space: nowrap; /* Prevent header text from wrapping */
+}
+
+/* Table cell styling */
+td {
+    /* Adjusted padding to make cells more compact */
+    padding: 0.7rem 1rem;
+    border-bottom: 1px solid #eee; /* Light bottom border for cells */
+    color: #555; /* Slightly lighter text for content */
+    vertical-align: top; /* Align content to the top */
+}
+
+/* Alternating row colors (zebra stripping) for better readability */
+tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* White background for odd rows */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fcfcfc; /* Very light grey for even rows */
+}
+
+/* Hover effect for table rows */
+tbody tr:hover {
+    background-color: #f0f0f0; /* Slightly darker background on hover */
+    transition: background-color 0.2s ease-in-out; /* Smooth transition */
+}
+
+/* Remove last row's bottom border for a cleaner finish */
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Styling for tables within code blocks (if applicable, though less common) */
+.highlight table {
+    box-shadow: none; /* Remove shadow for tables in code blocks */
+    border-radius: 0; /* Remove rounded corners */
+}
