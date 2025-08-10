@@ -151,6 +151,7 @@ nav:
       - CVE-CPE Differences Analysis: analysis/current/cpe-cve-old-vs-new.md
       - CVE-CWE Differences Analysis: analysis/current/cwe-cve-old-vs-new.md
       - Exploit Discrepancies Analysis: analysis/current/exploit-discrepancies-comprehensive.md
+      - Exploit Differences analysis: analysis/current/exploit-differences-old-vs-new.md
       #- Multi-Vendor Analysis: analysis/current/multi-vendor.md
       #- Temporal Patterns: analysis/current/temporal-patterns.md
       #- Statistical Analysis: analysis/current/statistical-analysis.md
