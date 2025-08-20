@@ -95,8 +95,10 @@ datasets/
 
 # Research outputs (optional)
 figures/
+figures_ch5/
 results/
 output/
 exports/
 
 cve_project/
+
